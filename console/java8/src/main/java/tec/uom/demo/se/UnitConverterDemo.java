@@ -40,7 +40,8 @@ public class UnitConverterDemo {
 
 	public static void main(String[] args) {
 		Unit<Length> sourceUnit = METRE;
-		Unit<Length> targetUnit = CENTI(METRE);
+		Unit<Length> targetUnit = KILO(METRE);
+
 		UnitConverter converter = sourceUnit.getConverterTo(targetUnit);
 		double length1 = 4.0;
 		double length2 = 6.0;
